@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="80dp"
+       android:id="@+id/commentHeadBar"
+       android:layout_alignParentTop="true"
+       android:background="@drawable/passagelistbg1">
+       
+       <Button
+    	android:id="@+id/head_cancel"
+        android:layout_width="70dp"   
+        android:layout_height="40dp"
+        android:background="@drawable/text_button"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"/>
+       
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/writeComment" 
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/head_text"
+        android:layout_marginTop="30dp"/>
+        
+       <Button
+    	android:id="@+id/head_offer"
+        android:layout_width="70dp"   
+        android:layout_height="40dp"
+        android:background="@drawable/text_button"
+        android:gravity="center"
+        android:text="@string/send"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"/>
+      
+   </RelativeLayout>
+   
+     <EditText 
+         android:gravity="top"
+         android:layout_below="@id/commentHeadBar"
+         android:layout_marginTop="5dp"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:id="@+id/commentEdit"
+         android:hint="@string/writehint"/>
+     
+  </RelativeLayout>

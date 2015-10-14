@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="vertical"> 
+       
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar"
+        android:id="@+id/title_bar"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical">
+        
+        <Button 
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back"
+            android:id="@+id/backTo"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="评   论"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+       
+    </RelativeLayout>
+       
+      <ListView 
+            android:layout_below="@id/title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/commentList"
+            android:dividerHeight="0dip"
+            android:layout_above="@+id/commentBar"
+            android:descendantFocusability="blocksDescendants"
+            android:listSelector="@android:color/transparent"/>
+     
+   
+    <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:layout_alignParentBottom="true"
+       android:id="@+id/commentBar"
+       android:gravity="center_vertical"
+       android:background="@drawable/title_bar">
+       
+       <Button 
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/CommentOffer"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/offer_comment"/>
+      <EditText 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/CommentOffer"
+            android:id="@+id/CommentEdit"
+            android:gravity="center_vertical"
+            android:hint="@string/writehint"
+            android:background="@null"/> 
+                 
+    </RelativeLayout>     
+     
+</RelativeLayout> 

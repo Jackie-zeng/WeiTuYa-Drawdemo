@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+    
+        <com.example.drawdemo04.autoset_widget.RecyclingImageView
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:id="@+id/contentImage"
+            android:scaleType="centerCrop"/>
+        
+        <ProgressBar 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:id="@+id/progress"
+            android:visibility="gone"/>
+        
+    </FrameLayout>
+
+    
+</LinearLayout>

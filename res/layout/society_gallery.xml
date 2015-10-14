@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_top"
+        android:gravity="center_vertical"
+        android:id="@+id/societyTitle">
+        
+        <ProgressBar 
+            android:id="@+id/progressDisplay"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"/>
+        
+          <TextView 
+              android:layout_centerHorizontal="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+              android:id="@+id/Gallery"
+              android:textSize="20sp"
+              android:text="@string/localGallery"/>
+          
+      </RelativeLayout>
+      
+       <RelativeLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:background="@drawable/passagelistbg2"
+           android:id="@+id/backgroundLayout"
+           android:layout_below="@id/societyTitle">
+           
+           <GridView 
+               android:id="@+id/gridview"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"   
+               android:numColumns="3"
+               android:stretchMode="columnWidth"
+               android:gravity="center"
+               android:dividerHeight="0dip"
+               android:horizontalSpacing="2dp"
+               android:verticalSpacing="2dp"
+               android:descendantFocusability="blocksDescendants"
+               android:listSelector="@android:color/transparent"
+               />
+             
+       </RelativeLayout>
+      
+</RelativeLayout>
+    

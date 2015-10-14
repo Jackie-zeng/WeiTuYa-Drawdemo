@@ -1,0 +1,76 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="progressdialog" parent="@android:style/Theme.Dialog">
+         <!-- name是我们在使用时要用到的资源的标志，parent是指当前的样式所继承的父类样式 -->
+         <item name="android:windowFrame">@null</item>
+         <item name="android:windowIsFloating">true</item>
+         <item name="android:windowIsTranslucent">false</item>
+         <item name="android:windowNoTitle">true</item>
+         <!-- 隐藏标题栏 -->
+         <item name="android:background">#00000000</item>
+         <item name="android:windowBackground">@color/tm</item>
+         <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <style name="AnimBottom">
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    
+    <style name="AnimationFade">
+        <item name="android:windowEnterAnimation">@anim/in_righttoleft</item>
+        <item name="android:windowExitAnimation">@anim/out_lefttoright</item>
+    </style>
+    
+    <style name="AnimationFade1">
+        <item name="android:windowEnterAnimation">@anim/in_righttoleft</item>
+        <item name="android:windowExitAnimation">@anim/out_lefttoright1</item>
+    </style>
+    
+    <style name="AnimationFadefromleft">
+        <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/out_righttoleft1</item>
+    </style>
+    
+    <style name="TitleBarBackground">
+        <item name="android:background">@color/black</item>
+    </style>
+    
+    <style name="MyCustomTheme" parent="android:Theme.Light"> 
+        <item name="android:windowTitleBackgroundStyle">@style/TitleBarBackground</item>
+        <item name="android:windowTitleSize">50dp</item>  
+    </style>
+
+    <style name="DialogText">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="DialogText.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="Transparent" parent="android:Theme.Light.NoTitleBar">
+                 <!--将Activity的Theme设置成透明--> 
+        <item name="android:windowIsTranslucent">true</item> 
+    </style>
+    
+</resources>

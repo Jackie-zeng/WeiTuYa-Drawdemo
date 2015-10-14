@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal">
+        
+    <com.example.drawdemo04.autoset_widget.RecyclingImageView
+        android:layout_gravity="left"
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+        
+       <RelativeLayout 
+           android:layout_height="wrap_content"
+           android:layout_width="fill_parent"
+           android:layout_marginTop="0dp"
+           android:layout_gravity="top">
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/nameText"
+               android:textSize="18sp"
+               android:text="zhang"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentLeft="true"
+               android:layout_marginLeft="3dp"/>
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/time"
+               android:textSize="15sp"
+               android:textColor="@color/lightpink"
+               android:text="22:15"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="3dp"/>
+       </RelativeLayout>
+       
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/contentText"
+           android:textSize="15sp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="5dp"
+           />
+       
+      </LinearLayout>
+ 
+   </LinearLayout>
+       
+</LinearLayout>

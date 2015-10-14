@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/graphycaltype"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent1"
+    android:orientation="vertical">
+    
+    <com.example.drawdemo04.holocolorpicker.ColorPicker
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/picker"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"/>
+
+     <RelativeLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/svb_layout"
+         android:layout_below="@id/picker"
+         android:layout_marginTop="10dp">
+         
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colorvalue"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:id="@+id/colorValue"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"/>
+     
+    <com.example.drawdemo04.holocolorpicker.SVBar
+        android:id="@+id/svbar"
+        android:layout_width="322dp"
+        android:layout_height="112dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/colorValue"/>
+    
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/opacity_layout"
+        android:layout_below="@id/svb_layout"
+        android:layout_marginTop="8dp">
+        
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brightness"
+        android:textSize="15sp"
+        android:id="@+id/brightness"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+      />
+         
+    <com.example.drawdemo04.holocolorpicker.OpacityBar
+        android:id="@+id/opacitybar"
+        android:layout_width="322dp"
+        android:layout_height="112dp"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/brightness"
+        />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pensize_layout"
+        android:layout_below="@id/opacity_layout"
+        android:layout_marginTop="8dp">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paintsize"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:id="@+id/penSize"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        />
+    
+    <com.example.drawdemo04.PenSize.PenSizeBar
+        android:id="@+id/penSizebar"
+        android:layout_width="322dp"
+        android:layout_height="112dp"
+        android:layout_toRightOf="@id/penSize"
+        android:layout_gravity="center"
+       />
+    
+   </RelativeLayout>
+    
+  <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/transparency_layout"
+        android:layout_below="@id/pensize_layout"
+        android:layout_marginTop="8dp">
+        
+   <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transparency"      
+        android:textColor="@color/black"    
+        android:textSize="15sp" 
+        android:id="@+id/transparency"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        />
+           
+    <com.example.drawdemo04.PenSize.PenSizeBar
+        android:id="@+id/penTransparencybar"
+        android:layout_width="322dp"
+        android:layout_height="112dp"
+        android:layout_toRightOf="@id/transparency"
+        android:layout_gravity="center"
+       />
+            
+ </RelativeLayout>
+ 
+  <LinearLayout 
+      android:id="@+id/display_linear"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true" 
+      android:orientation="vertical">
+      
+  </LinearLayout>
+  
+  <!-- android:layout_alignParentBottom="true" -->
+
+</RelativeLayout>

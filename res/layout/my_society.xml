@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent" 
+     android:layout_height="fill_parent"
+     android:background="@drawable/societybackground1"
+     android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_top"
+        android:gravity="center_vertical"
+        android:id="@+id/title">
+        
+          <!-- android:background="#FFBBFF" -->
+          <TextView 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+              android:textSize="20sp"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="31dp"
+              android:id="@+id/title_text"
+              android:text="我的社区"/>
+          
+           <ProgressBar 
+            android:id="@+id/progressDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp"
+            android:visibility="gone"/>
+      
+      </RelativeLayout>
+      
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_below="@id/title">
+          
+          <com.example.drawdemo04.autoset_widget.RecyclingImageView 
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:id="@+id/iconImage"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="5dp"
+              android:scaleType="fitXY"/>       
+          
+          <TextView 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="18sp"
+              android:text="ZhangZekai"
+              android:layout_toRightOf="@id/iconImage"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="85dp"
+              android:id="@+id/nickname"/>
+          <!-- 
+          <ImageView
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginTop="40dp"
+              android:layout_marginRight="2dp"
+              android:id="@+id/setting"
+              android:src="@drawable/title_byyourself"/>
+           -->
+      </RelativeLayout>
+      
+      <RelativeLayout 
+          android:id="@+id/setLayout"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal">
+          
+      </RelativeLayout>
+   
+</RelativeLayout>

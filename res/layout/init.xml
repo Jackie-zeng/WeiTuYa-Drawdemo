@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/initLayout"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center_horizontal">
+     
+    <!-- android:background="@drawable/little_bg02" -->
+     
+    <Button
+        android:id = "@+id/newcanvas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/init_button"
+        android:textColor="@color/transparent3"/>
+    
+    <Button
+        android:id="@+id/localgallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/init_button"
+        android:textColor="@color/transparent3"
+        android:textSize="15sp"/>
+   
+    <Button
+        android:id="@+id/societygallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/init_button"
+        android:textColor="@color/transparent3"/>
+    
+    <Button 
+        android:id="@+id/mygallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/init_button"
+        android:textColor="@color/transparent3"/>
+    
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/init_button"
+        android:textColor="@color/transparent3"/>
+    
+    
+</RelativeLayout>

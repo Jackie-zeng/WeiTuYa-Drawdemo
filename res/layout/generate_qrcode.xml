@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal">
+    
+    <ImageView 
+        android:id="@+id/QrImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"/>
+</RelativeLayout>

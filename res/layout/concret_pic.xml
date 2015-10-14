@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:layout_alignParentTop="true"
+    android:id="@+id/frame">
+    
+    <com.example.drawdemo04.autoset_widget.RecyclingImageView  
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/initalImage"
+        android:background="@color/transparent1"
+        android:scaleType="fitCenter"/>
+  
+    <!-- 
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent1"
+        android:id="@+id/backCommentbar">
+              
+        <EditText 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:id="@+id/CommentEdit"
+            android:gravity="top"
+            android:background="@color/transparent1"
+            android:hint="@string/writehint"/>        
+         
+         <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/CommentOffer"
+            android:text="发  送"
+            android:background="@color/transparent2"/>
+         
+    </LinearLayout>
+     -->
+     
+       <Gallery 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/gallery"
+        android:spacing="5dp"/> 
+       
+  </FrameLayout>

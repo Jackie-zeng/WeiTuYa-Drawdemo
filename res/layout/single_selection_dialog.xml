@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:minWidth="280dip" 
+	android:layout_height="wrap_content">
+
+	<RelativeLayout android:orientation="vertical"
+		android:background="@drawable/header" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TextView 
+		    style="@style/DialogText.Title" 
+		    android:id="@+id/title"
+			android:paddingRight="8dip" 
+			android:paddingLeft="8dip"
+			android:background="@drawable/dialog_title" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textColor="@color/black"
+			android:layout_alignParentLeft="true" />
+		
+		<Button 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/find_more_friend_addfriend_icon"
+		    android:id="@+id/addMoreAccount"
+		    android:layout_alignParentRight="true"/>
+		
+	</RelativeLayout>
+
+	<LinearLayout 
+	    android:id="@+id/content"
+		android:orientation="vertical" 
+		android:background="@drawable/center"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		
+		<ListView 
+		    android:layout_width="match_parent"
+			android:layout_height="match_parent" 
+			android:layout_marginTop="5px"
+			android:cacheColorHint="@null" 
+			android:descendantFocusability="blocksDescendants"
+            android:listSelector="@android:color/transparent"
+			android:divider="@android:drawable/divider_horizontal_bright"
+			android:scrollbars="vertical" 
+			android:id="@+id/lvListItem" />
+
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:orientation="horizontal"
+		android:background="@drawable/footer" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+
+	`
+
+</LinearLayout>

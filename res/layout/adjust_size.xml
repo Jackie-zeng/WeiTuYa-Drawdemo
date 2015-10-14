@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/adjustSizeLayout" >
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:layout_alignParentBottom="true"
+       android:id="@+id/undergroundBar"
+       android:gravity="center_vertical"
+       android:background="@drawable/passagelistbg1">
+       
+     <Button
+        android:id="@+id/sure"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="@string/sure"
+        android:background="@drawable/btn_style_alert_dialog_button_normal"
+        />
+        
+       <Button
+    	android:id="@+id/cancel"
+        android:layout_width="wrap_content"   
+        android:layout_height="fill_parent"
+        android:background="@drawable/btn_style_alert_dialog_button_normal"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:layout_alignParentRight="true"/>
+      
+   </RelativeLayout>
+</RelativeLayout>

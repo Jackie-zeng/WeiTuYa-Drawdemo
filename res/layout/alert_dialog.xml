@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="140dp"
+    android:id="@+id/penLayout"
+    android:orientation="horizontal"
+    android:background="@drawable/bottom_slider_bar2" >
+         
+    <LinearLayout 
+        android:id="@+id/eraserSet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        
+       <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_horizontal"
+        	android:layout_gravity="bottom"
+        	android:orientation="vertical"
+        	 >
+        	
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="橡皮大小"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"/>     
+        </RelativeLayout>
+        
+            <com.example.drawdemo04.PenSize.PenSizeBar
+                android:id="@+id/eraserSizebar"
+                android:layout_width="322dp"
+                android:layout_height="112dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+      </LinearLayout>
+ </LinearLayout>  
+ 
+   <LinearLayout
+        android:id="@+id/penSet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+      
+       <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="bottom"
+        	android:orientation="vertical">
+            
+       <HorizontalScrollView
+        	android:layout_width="fill_parent"
+        	android:layout_height="40dp"
+        	android:id="@+id/graphyicScroll"
+        	android:background="@drawable/l"
+        	android:scrollbars="none">
+            
+           <!-- android:background="@drawable/ere" -->
+           <LinearLayout 
+               android:layout_height="fill_parent"
+               android:layout_width="wrap_content"
+               android:orientation="horizontal"
+               android:id="@+id/graphyic_linear"
+               android:gravity="center_vertical">
+               
+           </LinearLayout>
+           
+       </HorizontalScrollView>
+       
+       <HorizontalScrollView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/PaintTypeScroll"
+           android:background="@drawable/l"
+           android:scrollbars="none">
+           
+           <LinearLayout 
+               android:layout_height="fill_parent"
+               android:layout_width="wrap_content"
+               android:orientation="horizontal"
+               android:id="@+id/PaintType_linear"
+               android:gravity="center_vertical"
+               >
+               
+           </LinearLayout>
+           
+       </HorizontalScrollView>
+       <!--  
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/bsc">
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/line"
+                android:src="@drawable/lines"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rectangle"
+                android:src="@drawable/rectangular"/>
+
+           <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/circle"
+                android:src="@drawable/circle46"/>
+           <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/triangle"
+                android:src="@drawable/yield"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cube"
+                android:src="@drawable/cube"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cylind"
+                android:src="@drawable/cylindrical7"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/path"
+                android:src="@drawable/curve25"/>
+           <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edittext"
+                android:src="@drawable/edit4"/>
+                
+          </LinearLayout>
+            -->
+            <!--  
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="画笔大小"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:id="@+id/penSize"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"/>
+            <ImageButton 
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/pen_select"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:id="@+id/morePic"/>    
+             -->        
+     </LinearLayout>
+     
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/backgroundSet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+       
+       <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_horizontal"
+        	android:layout_gravity="bottom"
+        	android:orientation="vertical">
+     
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/backgroundChoose">
+   
+            <com.example.drawdemo04.autoset_widget.LocalPhoto_Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/localChoose"
+                android:background="@drawable/ere"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp">     
+            </com.example.drawdemo04.autoset_widget.LocalPhoto_Button>
+            
+            <com.example.drawdemo04.autoset_widget.LocalPhoto_Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/societyChoose"
+                android:background="@drawable/ere"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"/>            
+        </RelativeLayout>
+        
+     </LinearLayout>
+     
+  </LinearLayout>
+  
+      <LinearLayout
+        android:id="@+id/deleteSet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+       
+       <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_horizontal"
+        	android:layout_gravity="bottom"
+        	android:orientation="vertical">
+     
+        <RelativeLayout
+            android:id="@+id/undoback"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+             <!--  
+           <ImageButton 
+               android:layout_width="60dp"
+               android:layout_height="50dp"
+               android:id="@+id/undoChoose"
+               android:src="@drawable/returnpressed"
+               android:background="@drawable/search_bar_edit_normal"
+               
+               android:layout_alignParentLeft="true"
+               android:layout_marginLeft="15dp"/>
+           -->
+           <com.example.drawdemo04.autoset_widget.Undo_Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/undoChoose"
+               android:background="@drawable/ere"
+               android:layout_alignParentLeft="true"
+               android:layout_marginLeft="15dp"/>
+           
+           <!--  
+           <Button 
+               android:layout_width="80dp"
+               android:layout_height="50dp"
+               android:layout_centerHorizontal="true"
+               android:id="@+id/deleteChoose"
+               android:gravity="center"
+               android:text="撤销"
+               android:background="@drawable/search_bar_edit_normal"
+               />
+           -->
+            <com.example.drawdemo04.autoset_widget.Undo_Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/deleteChoose"
+               android:background="@drawable/ere"
+               android:layout_centerHorizontal="true"/>
+            
+            <!-- 
+           <ImageButton 
+               android:layout_width="60dp"
+               android:layout_height="50dp"
+               android:id="@+id/redoChoose"
+               android:src="@drawable/redopressed"
+               android:background="@drawable/search_bar_edit_normal"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dp"/>
+                -->
+            <com.example.drawdemo04.autoset_widget.Undo_Button
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:id="@+id/redoChoose"
+               android:background="@drawable/ere"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dp"/>   
+           <!--  
+            <Button 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_bar_edit_normal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="社区获取"
+                android:id="@+id/societyChoose"/>      
+           -->      
+        </RelativeLayout>
+        
+     </LinearLayout>
+     
+  </LinearLayout>
+  
+</LinearLayout>

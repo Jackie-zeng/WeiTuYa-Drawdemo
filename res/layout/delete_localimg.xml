@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/transparent1">
+       
+       <RelativeLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_horizontal"
+        	android:layout_gravity="bottom"
+        	android:orientation="vertical">
+        	
+            <Button 
+                android:id="@+id/deletePic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text = "删      除"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/delete_pic"
+                android:gravity="center"/>
+            
+            <Button
+                android:id="@+id/giveup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="取     消"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/delete_pic"
+                android:gravity="center"/>     
+
+     </RelativeLayout>
+     
+  </LinearLayout>

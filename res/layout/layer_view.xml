@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent" 
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:id="@+id/layerlinear"
+     android:background="@color/transparent1">
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/passagelistbg1"
+        android:gravity="center_vertical"
+        android:id="@+id/title">
+       
+       <Button 
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:id="@+id/recover"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="3dp"
+           android:visibility="gone"
+           android:background="@drawable/layer_delete"/>
+         
+       <TextView                
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="20sp"
+           android:layout_centerHorizontal="true"
+           android:text="@string/layer"/>
+       
+       <Button 
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:id="@+id/save"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="3dp"
+           android:visibility="gone"
+           android:background="@drawable/layer_add"/>
+       
+    </RelativeLayout>
+    <!--  
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+     -->  
+    <com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+        android:id="@+id/dynamiclistview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:descendantFocusability="blocksDescendants"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"/>
+     
+  <!--  </LinearLayout>   --> 
+  
+   <!-- 
+    <com.example.drawdemo04.MyScollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+      
+        <LinearLayout 
+            android:id="@+id/linearlayout"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+            
+        </LinearLayout>
+           
+    </com.example.drawdemo04.MyScollView>
+  -->
+</LinearLayout>

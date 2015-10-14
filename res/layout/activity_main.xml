@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/theAll">
+    
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:id="@+id/titleSet"
+       android:layout_alignParentTop="true"
+       android:gravity="center_vertical"
+       android:background="@drawable/titlebar3">
+       
+      <Button 
+        android:id="@+id/Society"
+        android:layout_width="30dp"   
+        android:layout_height="30dp"
+        android:background="@drawable/share"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"/>
+            
+       <TextView
+        android:id="@+id/head_center_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/appname" 
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+       <!--  android:textColor="#FFFFFF" -->
+       <Button
+    	android:id="@+id/head_TitleBackBtn"
+        android:layout_width="30dp"   
+        android:layout_height="30dp"
+        android:background="@drawable/layers_but"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"/>
+            
+   </RelativeLayout>
+         
+   <RelativeLayout 
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@+id/titleSet"
+    android:id="@+id/content">
+       
+  <FrameLayout 
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    
+      <LinearLayout
+        android:id="@+id/linearlayout01"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"      
+        android:orientation="vertical">
+    </LinearLayout>  
+    
+      
+     <RelativeLayout
+       android:layout_width="120dp"
+       android:layout_height="40dp"
+       android:background="@drawable/bg_selected_color"
+       android:layout_marginTop="10dp"
+       android:gravity="center"
+       android:id="@+id/recycle_tag">
+       
+       <Button
+        android:layout_width="30dp"   
+        android:layout_height="30dp"
+        android:id="@+id/recycle_btn"
+        android:background="@drawable/recycle"
+        android:gravity="center"/>
+       
+       </RelativeLayout>
+   
+ </FrameLayout>
+
+    </RelativeLayout>
+    
+  </RelativeLayout>
+  
