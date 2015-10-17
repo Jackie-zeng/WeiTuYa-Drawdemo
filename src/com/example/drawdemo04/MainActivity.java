@@ -100,6 +100,8 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 ///////from == 0 来自init 新画布  ;from == 1来自init 本地画廊; from == 2 来自init-社区画廊-加号;from == 3 来自 init-本地画廊-加号  from == 4 来自gallery-加号
+///////from == 0 来自init 新画布  ;from == 1来自init 本地画廊; from == 2 来自init-社区画廊-加号;from == 3 来自 init-本地画廊-加号  from == 4 来自gallery-加号
+///////from == 0 来自init 新画布  ;from == 1来自init 本地画廊; from == 2 来自init-社区画廊-加号;from == 3 来自 init-本地画廊-加号  from == 4 来自gallery-加号
 public class MainActivity extends Activity{
 
 	public final int FLOORBITMAP = 1,BACKBITMAP = 0;
