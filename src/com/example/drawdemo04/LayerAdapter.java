@@ -23,7 +23,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 
 public class LayerAdapter extends BaseAdapter implements Insertable<LayerView>{
-
+//fix something¡£¡£¡£
 	private ArrayList<LayerView> layerviews;
 	private Context context;
 	private int width,height;
