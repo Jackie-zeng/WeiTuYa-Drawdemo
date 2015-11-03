@@ -26,6 +26,7 @@ public class AdjustView extends View{
 //	private Bitmap floorBitmap;
 	private Bitmap surfaceBitmap;
 //	private Canvas floorCanvas;
+	//private Canvas surfaceCanvas;
 	private Canvas surfaceCanvas;
 	
 	public AdjustView(Context context,int width,int height,RecyclingBitmapDrawable value) {
